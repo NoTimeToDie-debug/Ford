@@ -1,0 +1,85 @@
+#search {
+    padding: 0 2rem;
+    .search__container {
+        padding: 2rem;
+        background-color: #333;
+        @include Responsive(XS) {
+            padding: 1rem;
+        }
+        .style__search {
+            @include Responsive2(XX) {
+                display: none;
+            }
+        }
+        .form-group {
+            position: relative;
+            margin-bottom: 0;
+            input {
+                display: inline-block;
+                z-index: 5;
+                height: inherit;
+                margin: 0;
+                border: 0 none;
+                padding: 0 0 0 35px;
+                background: transparent none;
+                color: #fff;
+                font-size: 24px;
+                vertical-align: middle;
+                &::placeholder {
+                    color: white;
+                }
+                &:focus-visible {
+                    outline: none;
+                }
+                @include Responsive(SM) {
+                    font-size: 20px;
+                    width: 160px;
+                }
+            }
+            span {
+                position: absolute;
+                display: block;
+                top: -4px;
+                left: 0;
+                z-index: 6;
+                width: 34px;
+                height: 34px;
+                color: #fff;
+                font-size: 25px;
+            }
+        }
+        .popular {
+            .content {
+                display: flex;
+                justify-content: space-around;
+                @include Responsive2(SS) {
+                    display: unset;
+                }
+            }
+            ul {
+                list-style: none;
+                margin-bottom: 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    padding: 5px;
+                    &:hover {
+                        a {
+                            color: #fff;
+                            transition: all 0.5s;
+                        }
+                    }
+                    .active {
+                        color: white;
+                        font-weight: bold;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #a7a7a7;
+                    }
+                }
+            }
+        }
+    }
+}

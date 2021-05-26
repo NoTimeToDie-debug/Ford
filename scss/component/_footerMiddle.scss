@@ -1,0 +1,92 @@
+#footer__middle {
+    padding: 0 2rem;
+    .middle__container {
+        background-color: #102b4e;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include Responsive2(XX) {
+            flex-direction: column;
+            align-items: unset;
+        }
+        .content-left {
+            display: flex;
+            @include Responsive2(XX) {
+                display: unset;
+            }
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+                i {
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    line-height: 2.5rem;
+                    border-radius: 50%;
+                    background-color: #2096cd;
+                }
+                h3 {
+                    margin: 0;
+                    color: #37a9e8;
+                    display: flex;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 1rem;
+                    font-weight: 400;
+                }
+            }
+            #share {
+                padding-left: 2rem;
+                @include Responsive(MD) {
+                    display: none;
+                }
+            }
+            #update {
+                @include Responsive2(XX) {
+                    border-bottom: 1px solid #a7a7a7;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+        .content-right {
+            display: flex;
+            align-items: center;
+            @include Responsive(MD) {
+                flex-direction: column;
+                align-items: unset;
+            }
+            p {
+                padding-right: 1rem;
+                color: #fff;
+                margin: 0;
+                @include Responsive(MD) {
+                    padding: 0.5rem 0;
+                }
+            }
+            .icon {
+                .fac {
+                    @include Icon();
+                    background-color: #005c8c;
+                }
+                .twi {
+                    @include Icon();
+                    background-color: #41a1d3;
+                }
+                .you {
+                    @include Icon();
+                    background-color: red;
+                }
+                .ins {
+                    @include Icon();
+                    background-color: #ff6d86;
+                }
+            }
+        }
+    }
+}

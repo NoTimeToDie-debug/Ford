@@ -1,0 +1,121 @@
+#brand__gallery {
+    padding: 2rem 2rem 0 2rem;
+    .gallery__container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        @include Responsive (SM) {
+            grid-template-columns: 50% 50%;
+        }
+        @include Responsive (XS) {
+            grid-template-columns: 100%;
+        }
+        .item1 {
+            grid-column: 1 / span 3;
+            @include Responsive (SM) {
+                grid-column: unset;
+            }
+            @include Responsive (XS) {
+                grid-column: unset;
+            }
+            h2 {
+                font-size: 27.5px;
+                font-weight: 400;
+                text-align: center;
+            }
+            p {
+                color: #626466;
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+        }
+        .item {
+            position: relative;
+            overflow: hidden;
+            &:hover img {
+                transform: scale(1.1);
+                transition: all 0.5s;
+            }
+            img {
+                width: 100%;
+            }
+            .title {
+                position: absolute;
+                background: rgba(6, 120, 188, 0.9);
+                bottom: 0;
+                width: 100%;
+                height: 55px;
+                padding: 1rem;
+                p {
+                    font-size: 14px;
+                    color: #fff;
+                    margin: 0;
+                }
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 27px;
+                    text-align: center;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    color: #fff;
+                    font-size: 13px;
+                    &:hover {
+                        color: #0276b3;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .item3 {
+            grid-column: 1 / span 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            overflow: hidden;
+            position: relative;
+            @include Responsive (SM) {
+                grid-column: unset;
+            }
+            @include Responsive (XS) {
+                grid-column: unset;
+            }
+            &:hover img {
+                transform: scale(1.1);
+                transition: all 0.5s;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .title {
+                position: absolute;
+                background: rgba(6, 120, 188, 0.9);
+                bottom: 0;
+                width: 100%;
+                height: 80px;
+                padding: 1.5rem;
+                color: #fff;
+                p {
+                    margin: 0;
+                    font-size: 21px;
+                }
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 45px;
+                    text-align: center;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    color: #fff;
+                    font-size: 23px;
+                    &:hover {
+                        color: #0276b3;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

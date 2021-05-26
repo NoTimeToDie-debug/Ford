@@ -1,0 +1,53 @@
+footer {
+    padding: 0 2rem;
+    .footer__container {
+        background-color: #242424;
+        padding: 2rem 3rem 4rem 0;
+        #laptop {
+            @include Flink();
+            display: flex;
+            justify-content: space-between;
+            @include Responsive2(XX){
+                display: none !important;
+            }
+            @include Responsive2(SM) {
+                display: none !important;
+            }
+        }
+        #tablet {
+            @include Flink();
+            display: flex;
+            justify-content: space-between;
+            ul {
+                h3 {
+                    padding: 1rem 0;
+                }
+            }
+            .tablet__content {
+                @include Device();
+            }
+            @include Responsive2(XL) {
+                display: none !important;
+            }
+            @include Responsive2(XX){
+                display: none !important;
+            }
+        }
+        #mobile {
+            padding-left: 2rem;
+            @include Flink();
+            .mobile__content {
+                @include Device();
+            }
+            @include Responsive2(XL) {
+                display: none !important;
+            }
+            @include Responsive2(SM) {
+                display: none !important;
+            }
+            ul {
+                padding-left: 0;
+            }
+        }
+    }
+}

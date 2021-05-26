@@ -1,0 +1,29 @@
+#disclosures {
+    .disclosures__container {
+        padding: 0 2rem;
+        p {
+            margin-bottom: 2rem;
+            &:hover {
+                a {
+                    color: black;
+                }
+            }
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                i {
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+        .row {
+            .style__card {
+                max-height: 240px;
+                overflow-y: scroll;
+                background-color: #f7f7f7;
+                padding: 0 10%;
+                font-size: 12px;
+            }
+        }
+    }
+}

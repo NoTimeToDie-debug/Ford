@@ -1,0 +1,132 @@
+#footer__bottom {
+    padding: 0 2rem;
+    .bottom__container {
+        padding: 2rem;
+        background-color: #f7f7f7;
+        .content-left {
+            img {
+                @include Responsive2(XX) {
+                    display: none;
+                }
+            }
+            a {
+                color: #0276b3;
+                &:hover {
+                    color: #102b4e;
+                    text-decoration: none;
+                }
+                i {
+                    margin-right: 1rem;
+                    font-size: 1.5rem;
+                }
+                span {
+                    text-decoration: underline;
+                    font-size: 14px;
+                }
+            }
+            .modal-dialog {
+                max-width: unset;
+                .modal-content {
+                    background-color: unset;
+                    border: unset;
+                    .modal-header {
+                        border-bottom: unset;
+                        button {
+                            &:focus {
+                                outline: unset;
+                            }
+                        }
+                        .close {
+                            font-size: 3rem;
+                            font-weight: 100;
+                            line-height: 1;
+                            color: #a7a7a7;
+                            text-shadow: unset;
+                            opacity: unset;
+                        }
+                    }
+                    .modal-body {
+                        text-align: center;
+                        h5 {
+                            margin: 2rem 0;
+                            color: #fff;
+                            font-size: 1.7rem;
+                            @include Responsive2(SM){
+                                font-size: 1.5rem;
+                            }
+                            @include Responsive(SM){
+                                font-size: 1.2rem;
+                            }
+                        }
+                        .eng {
+                            @include Modalbtn();
+                            margin-bottom: 0.5rem;
+                            button {
+                                @include Responsive2(SM){
+                                    width: 500px;
+                                }
+                                @include Responsive(SM){
+                                    font-size: 1rem;
+                                }
+                                @include Responsive(SM){
+                                    width: 150px;
+                                }
+                            }
+                            
+                        }
+                        .spa {
+                            @include Modalbtn();
+                            button {
+                                @include Responsive2(SM){
+                                    width: 500px;
+                                }
+                                @include Responsive(SM){
+                                    font-size: 1rem;
+                                }
+                                @include Responsive(SM){
+                                    width: 150px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .bot__text {
+                padding: 1.5rem 0 0.5rem 0;
+                a {
+                    font-size: 14px;
+                    color: #555;
+                }
+            }
+            .bot__link {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    padding: 0;
+                    @include Responsive2(XX) {
+                        display: unset;
+                    }
+                    li {
+                        margin-right: 2rem;
+                        a {
+                            font-size: 14px;
+                            color: #555;
+                        }
+                    }
+                }
+            }
+        }
+        .content-right {
+            @include Responsive2(MD){
+                display: none;
+            }
+            @include Responsive2(SM){
+                display: none;
+            }
+            img {
+                width: 80px;
+            }
+        }
+    }
+}

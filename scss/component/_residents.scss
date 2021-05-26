@@ -1,0 +1,33 @@
+#residents {
+    padding: 0 2rem;
+    .residents__container {
+        background-color: #092a46;
+        color: white;
+        padding: 2.5rem 0;
+        h2 {
+            font-size: 42px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            a {
+                text-decoration: underline;
+                color: #37a9e8;
+                font-size: 16px;
+            }
+        }
+        button {
+            background-color: #0276b3;
+            border: 1px solid #0276b3;
+            padding: 15px;
+            line-height: 1.25;
+            min-height: 50px;
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+}
