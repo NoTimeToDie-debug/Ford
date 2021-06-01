@@ -1,0 +1,44 @@
+.popover {
+    position: absolute;
+    font-family: 'fordngbs-antenna-light', arial, helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 25px;
+    color: #555;
+    background-color: #fff;
+    border: solid 1px #555;
+    z-index: 3000;
+    border-radius: 0;
+    max-width: 400px;
+    left: -10px !important;
+    .arrow {
+        display: none;
+    }
+    .popover-body {
+        padding: 0;
+        i {
+            color: #0276b3;
+            font-size: 37px;
+            position: absolute;
+            right: 25px;
+            top: 27px;
+            cursor: pointer;
+            &:hover {
+                color: #555;
+            }
+        }
+        h1 {
+            margin: 30px 0 0 28px;
+            float: left;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        p {
+            line-height: 30px;
+            padding: 25px;
+            float: left;
+            width: 100%;
+        }
+    }
+}

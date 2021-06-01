@@ -1,0 +1,38 @@
+.modal {
+    padding-right: 220px !important;
+    .modal-dialog {
+        max-width: 360px;
+        .modal-content {
+            border: 1px solid black;
+            border-radius: 0%;
+            .modal-body {
+                span {
+                    color: #0276b3;
+                    font-size: 50px;
+                    font-weight: 200;
+                    position: absolute;
+                    right: 20px;
+                    top: 27px;
+                    cursor: pointer;
+                    &:hover {
+                        color: #555;
+                    }
+                }
+                h1 {
+                    margin: 30px 0 0 28px;
+                    float: left;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 1.4;
+                }
+                p {
+                    line-height: 30px;
+                    padding: 25px;
+                    float: left;
+                    width: 100%;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

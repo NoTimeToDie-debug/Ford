@@ -7,10 +7,25 @@ footer {
             @include Flink();
             display: flex;
             justify-content: space-between;
-            @include Responsive2(XX){
+            @include Responsive2(XX) {
                 display: none !important;
             }
             @include Responsive2(SM) {
+                display: none !important;
+            }
+            @include Responsive3(iphoneX) {
+                display: none !important;
+            }
+            @include Responsive3(pixel2) {
+                display: none !important;
+            }
+            @include Responsive3(motoG4) {
+                display: none !important;
+            }
+            @include Responsive3(surface) {
+                display: none !important;
+            }
+            @include Responsive3(glaxyFold) {
                 display: none !important;
             }
         }
@@ -29,7 +44,22 @@ footer {
             @include Responsive2(XL) {
                 display: none !important;
             }
-            @include Responsive2(XX){
+            @include Responsive2(XX) {
+                display: none !important;
+            }
+            @include Responsive3(ipad) {
+                display: none !important;
+            }
+            @include Responsive3(pixel2) {
+                display: none !important;
+            }
+            @include Responsive3(motoG4) {
+                display: none !important;
+            }
+            @include Responsive3(surface) {
+                display: none !important;
+            }
+            @include Responsive3(glaxyFold) {
                 display: none !important;
             }
         }
@@ -47,6 +77,12 @@ footer {
             }
             ul {
                 padding-left: 0;
+            }
+            @include Responsive3(iphoneX) {
+                display: none !important;
+            }
+            @include Responsive3(ipad) {
+                display: none !important;
             }
         }
     }

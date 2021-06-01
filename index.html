@@ -3,21 +3,566 @@
 
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./font/FordAntennaCond-Medium/FordAntennaCond-Medium.woff">
+    <link rel="stylesheet" href="./font/FordAntenna-Light.woff">
+    <link rel="stylesheet" href="./font/FordAntenna-Regular.woff">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./lib/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owl-carousel/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ford.css">
 </head>
 
-<body>
+<body id="body">
+    <header class="container-fluid myNavBar">
+        <div class="nav-bar">
+            <div class="nav-top">
+                <div class="nav-top-left">
+                    <ul class="list-left">
+                        <li>
+                            <a class="item" href="">
+                                <span class="left-item ford-mustang"></span>
+                                <span class="left-text">MUSTANG</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item saperator" href="">
+                                <span class="left-item ford-bronco"></span>
+                                <span class="left-text ">BRONCO</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item saperator" href="">
+                                <span class="left-text">CERTIFIED USED</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-top-right">
+                    <a href="">
+                        <span class="icon"></span>
+                        <span class="text">Dealership Locations</span>
+                    </a>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg  ">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                </a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="lines"></span>
+          <span class="navbar-toggler-icon">Menu</span>
+          <span class="open">display menu</span>
+          <span class="close">close menu</span>
+        </button>
+
+                <!-- Navbar links -->
+                <ul class="collapse  navbar-collapse" id="collapsibleNavbar">
+
+                    <ul class="navbar-nav nav-1">
+                        <li class="dropdown nav-item" id="btn-SUV">
+                            <a id="a-name" class="nav-link dropdown-toggle" data-toggle="dropdown">SUVS & CROSSOVERS</a>
+                            <ul class="dropdown-menu" id="dropdown-menu">
+                                <div class=" menu-set">
+                                    <ul class="row">
+                                        <li class="col-2 vehicle">
+                                            <div class="vehicle-title">
+                                                <div class="vehicle-top">
+                                                    <div class="vehicle-item">
+                                                        <div class="vehicle-banner"></div>
+                                                        <div class="vehicle-img">
+                                                            <img src="./images/car-1.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="vehicle-name">
+                                                        <p>2021 ECOSPORT <span><i class="fa fa-chevron-right"></i></span></p>
+                                                    </div>
+                                                    <div class="vehicle-info">
+                                                        <p>Starting at $19,995<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span></p>
+                                                    </div>
+                                                    <div class="vehicle-crap">
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Build & Price</span>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Search Inventory</span>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-2 vehicle">
+                                            <div class="vehicle-title">
+                                                <div class="vehicle-top">
+                                                    <div class="vehicle-item">
+                                                        <div class="vehicle-banner">
+                                                        </div>
+                                                        <div class="vehicle-img">
+                                                            <img src="./images/car-2.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="vehicle-name">
+                                                        <p>2021 ESCAPE <span><i class="fa fa-chevron-right"></i></span></p>
+                                                    </div>
+                                                    <div class="vehicle-info">
+                                                        <p>Starting at $24,885<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span></p>
+                                                    </div>
+                                                    <div class="vehicle-crap">
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Build & Price</span>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Search Inventory</span>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-2 vehicle">
+                                            <div class="vehicle-title">
+                                                <div class="vehicle-top">
+                                                    <div class="vehicle-item">
+                                                        <div class="vehicle-banner">
+                                                        </div>
+                                                        <div class="vehicle-img">
+                                                            <img src="./images/car-3.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="vehicle-name">
+                                                        <p>2021 ESCAPE <span><i class="fa fa-chevron-right"></i></span></p>
+                                                    </div>
+                                                    <div class="vehicle-info">
+                                                        <p>Starting at $24,885<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span></p>
+                                                    </div>
+                                                    <div class="vehicle-crap">
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Build & Price</span>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Search Inventory</span>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-2 vehicle">
+                                            <div class="vehicle-title">
+                                                <div class="vehicle-top">
+                                                    <div class="vehicle-item">
+                                                        <div class="vehicle-banner">
+                                                        </div>
+                                                        <div class="vehicle-img">
+                                                            <img src="./images/car-8.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="vehicle-name">
+                                                        <p>2021 ESCAPE <span><i class="fa fa-chevron-right"></i></span></p>
+                                                    </div>
+                                                    <div class="vehicle-info">
+                                                        <p>Starting at $24,885<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span></p>
+                                                    </div>
+                                                    <div class="vehicle-crap">
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Build & Price</span>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Search Inventory</span>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-2 vehicle">
+                                            <div class="vehicle-title">
+                                                <div class="vehicle-top">
+                                                    <div class="vehicle-item">
+                                                        <div class="vehicle-banner">
+                                                        </div>
+                                                        <div class="vehicle-img">
+                                                            <img src="./images/car-5.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="vehicle-name">
+                                                        <p>2021 ESCAPE <span><i class="fa fa-chevron-right"></i></span></p>
+                                                    </div>
+                                                    <div class="vehicle-info">
+                                                        <p>Starting at $24,885<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span></p>
+                                                    </div>
+                                                    <div class="vehicle-crap">
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Build & Price</span>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Search Inventory</span>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-2 vehicle">
+                                            <div class="vehicle-title">
+                                                <div class="vehicle-top">
+                                                    <div class="vehicle-item">
+                                                        <div class="vehicle-banner">
+                                                        </div>
+                                                        <div class="vehicle-img">
+                                                            <img src="./images/car-6.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="vehicle-name">
+                                                        <p>2021 ESCAPE <span><i class="fa fa-chevron-right"></i></span></p>
+                                                    </div>
+                                                    <div class="vehicle-info">
+                                                        <p>Starting at $24,885<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span></p>
+                                                    </div>
+                                                    <div class="vehicle-crap">
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Build & Price</span>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Search Inventory</span>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="col-2 vehicle">
+                                            <div class="vehicle-title">
+                                                <div class="vehicle-top">
+                                                    <div class="vehicle-item">
+                                                        <div class="vehicle-banner">
+                                                        </div>
+                                                        <div class="vehicle-img">
+                                                            <img src="./images/car-7.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="vehicle-name">
+                                                        <p>2021 ESCAPE <span><i class="fa fa-chevron-right"></i></span></p>
+                                                    </div>
+                                                    <div class="vehicle-info">
+                                                        <p>Starting at $24,885<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span></p>
+                                                    </div>
+                                                    <div class="vehicle-crap">
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Build & Price</span>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Search Inventory</span>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-2 vehicle">
+                                            <div class="vehicle-title">
+                                                <div class="vehicle-top">
+                                                    <div class="vehicle-item">
+                                                        <div class="vehicle-banner">
+                                                        </div>
+                                                        <div class="vehicle-img">
+                                                            <img src="./images/car-8.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="vehicle-name">
+                                                        <p>2021 ESCAPE <span><i class="fa fa-chevron-right"></i></span></p>
+                                                    </div>
+                                                    <div class="vehicle-info">
+                                                        <p>Starting at $24,885<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span></p>
+                                                    </div>
+                                                    <div class="vehicle-crap">
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Build & Price</span>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="crap">
+                                                            <a href="">
+                                                                <span>Search Inventory</span>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                <div class="menu-seagmen">
+                                    <div class="seagmen-item">
+                                        <div class="item">
+                                            <a href="" class="btn btn-primary">
+                                                <span>Explore all Vehicles</span>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="btn btn-primary">
+                                                <span>See Special Offers</span>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="btn btn-primary">
+                                                <span>Certified Used</span>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="" class="btn btn-primary">
+                                                <span>Explore Fuel Choices</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TRUCKS & VANS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ELECTRIFIED</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CARS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ON VEHICLES</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav nav-2">
+                        <a class="icon-1" href="#"><span class="icon"></span></a>
+                        <li class="nav-item account">
+                            <a class="nav-link" href="#">
+                MY ACCOUNT</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">FINANCE</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">SUPPORT</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">EN</a>
+                        </li>
+                    </ul>
+        </div>
+        </nav>
+        </div>
+
+
+    </header>
+
+
+    <!-- carousel  -->
+    <!-- <section class="carousel container-fluid">
+    <div class="carousel-content">
+      <a href="">
+        <h3>
+          <span>
+            The Ford F-150 Lightning:
+            <br>
+            All-Elctric. All Truck.
+          </span>
+        </h3>
+
+        <p>See the Power of Electric <span> <i class="fa fa-angle-right"></i></span></p>
+      </a>
+    </div>
+  </section> -->
+    <div id="demo" class="carousel container-fluid slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item item-1 active">
+                <div class="carousel-content">
+                    <a href="">
+                        <h3>
+                            <span>
+                The Ford F-150 Lightning:
+                <br>
+                All-Elctric. All Truck.
+              </span>
+                        </h3>
+
+                        <p>See the Power of Electric <span> <i class="fa fa-angle-right"></i></span></p>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item item-2">
+                <div class="carousel-content">
+                    <a href="">
+                        <h3>
+                            <span>
+                Find the Fun in an EcoSport SUV.
+              </span>
+                        </h3>
+
+                        <p>2021 Ford EcoSport <span> <i class="fa fa-angle-right"></i></span></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <div class="carousel-control">
+            <a class="carousel-control-prev control" href="#demo" data-slide="prev">
+                <span><i class="fa fa-chevron-left"></i></span>
+            </a>
+            <a class="carousel-control-next control" href="#demo" data-slide="next">
+                <span><i class="fa fa-chevron-right"></i></span>
+            </a>
+        </div>
+
+    </div>
+
+    <section class="container-fluid info">
+        <div class="info-head">
+            <h1>Pick Up Where You Left Off</h1>
+        </div>
+
+        <div class="info-item">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                <div class="item item-left">
+                    <div class="info-content">
+                        <a href="">
+                            <img src="./images/eco.png" alt="">
+                            <h3>2021 EcoSport <span><i class="fa fa-chevron-right"></i></span></h3>
+                        </a>
+                    </div>
+                    <div class="info-bottom">
+                        <p>Starting at $23,560<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span>
+                        </p>
+                        <a href="">
+                            <button class="btn btn-primary">Overview</button>
+                            <h5>Views All Offer<span><i class="fa fa-chevron-right"></i></span></h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="item item-left">
+                    <div class="info-content">
+                        <a href="">
+                            <img src="http://build.ford.com/dig/Ford/Bronco/2021/HD-TILE/Hero/EXT/5/vehicle.png" alt="">
+                            <h3>2022 Bronco <span><i class="fa fa-chevron-right"></i></span></h3>
+                        </a>
+                    </div>
+                    <div class="info-bottom">
+                        <p>Starting at $39,974<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span>
+                        </p>
+                        <a href="">
+                            <button class="btn btn-primary">Overview</button>
+                            <h5>Get Updates<span><i class="fa fa-chevron-right"></i></span></h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="item item-right">
+                    <div class="info-content">
+                        <a href="">
+                            <img src="http://build.ford.com/dig/Ford/F-150%20Lightning/2022/HD-TILE/Hero/EXT/5/vehicle.png" alt="">
+                            <h3>2022 Ford F-150 Lighting <span><i class="fa fa-chevron-right"></i></span></h3>
+                        </a>
+                    </div>
+                    <div class="info-bottom">
+                        <p>Starting at $39,974<span tabindex="0" data-toggle="popover" data-popover-content="#unique-id">1</span>
+                        </p>
+                        <a href="">
+                            <button class="btn btn-primary">Overview</button>
+                            <h5>Get Updates<span><i class="fa fa-chevron-right"></i></span></h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="carousel-2 container-fluid">
+        <div class="carousel-content">
+            <a href="">
+                <h3>
+                    Let Us Sweeten the Deal
+                </h3>
+
+                <p>SEE ALL OFFERS <span> <i class="fa fa-angle-right"></i></span></p>
+            </a>
+        </div>
+    </section>
+
+    <div id="unique-id" class="popover" style="display:none;">
+        <div class="popover-body">
+            <i class="fa fa-times"></i>
+            <h1>1</h1>
+            <p>MSRP for base vehicle. Excludes destination/delivery fee plus government fees and taxes, any finance charges, any dealer processing charge, any electronic filing charge, and any emission testing charge. Optional equipment not included. Starting
+                A, Z and X Plan price is for qualified, eligible customers and excludes document fee, destination/delivery charge, taxes, title and registration. Not all vehicles qualify for A, Z or X Plan. All Mustang Shelby GT350® and Shelby® GT350R
+                prices exclude gas guzzler tax.</p>
+        </div>
+    </div>
     <!-- brand-gallery -->
     <section id="brand__gallery">
         <div class="gallery__container">
@@ -96,64 +641,33 @@
     <section id="disclosures">
         <div class="disclosures__container">
             <p class="text-center">
-                <a data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false"
-                    aria-controls="multiCollapseExample1">Disclosures<i class="fas fa-angle-down"></i></a>
+                <a data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Disclosures<i class="fas fa-angle-down"></i></a>
             </p>
             <div class="row">
                 <div class="col">
                     <div class="collapse multi-collapse" id="multiCollapseExample1">
                         <div class="card card-body style__card">
-                            Note.<br>
-                            Information is provided on an "as is" basis and could include technical, typographical or
-                            other errors. Ford makes no warranties, representations, or guarantees of any kind, express
-                            or implied, including but not limited to, accuracy, currency, or completeness, the operation
-                            of the Site, the information, materials, content, availability, and products. Ford reserves
-                            the right to change product specifications, pricing and equipment at any time without
-                            incurring obligations. Your Ford dealer is the best source of the most up-to-date
-                            information on Ford vehicles.<br>
-                            1.<br>
-                            MSRP for base vehicle. Excludes destination/delivery fee plus government fees and taxes, any
-                            finance charges, any dealer processing charge, any electronic filing charge, and any
-                            emission testing charge. Optional equipment not included. Starting A, Z and X Plan price is
-                            for qualified, eligible customers and excludes document fee, destination/delivery charge,
-                            taxes, title and registration. Not all vehicles qualify for A, Z or X Plan. All Mustang
-                            Shelby GT350® and Shelby® GT350R prices exclude gas guzzler tax.<br>
-                            2.<br>
-                            EPA-estimated city/hwy mpg for the model indicated. See fueleconomy.gov for fuel economy of
-                            other engine/transmission combinations. Actual mileage will vary. On plug-in hybrid models
-                            and electric models, fuel economy is stated in MPGe. MPGe is the EPA equivalent measure of
-                            gasoline fuel efficiency for electric mode operation.<br>
-                            5.<br>
-                            FordPass Connect (optional on select vehicles), the FordPass App; and complimentary
-                            Connected Service are required for remote features (see FordPass Terms for details).
-                            Connected service and features depend on compatible AT&T network availability. Evolving
-                            technology/cellular networks/vehicle capability may limit functionality and prevent
-                            operation of connected features. Connected service excludes WiFi hotspot.<br>
+                            Note.<br> Information is provided on an "as is" basis and could include technical, typographical or other errors. Ford makes no warranties, representations, or guarantees of any kind, express or implied, including but not limited
+                            to, accuracy, currency, or completeness, the operation of the Site, the information, materials, content, availability, and products. Ford reserves the right to change product specifications, pricing and equipment at any time
+                            without incurring obligations. Your Ford dealer is the best source of the most up-to-date information on Ford vehicles.<br> 1.
+                            <br> MSRP for base vehicle. Excludes destination/delivery fee plus government fees and taxes, any finance charges, any dealer processing charge, any electronic filing charge, and any emission testing charge. Optional equipment
+                            not included. Starting A, Z and X Plan price is for qualified, eligible customers and excludes document fee, destination/delivery charge, taxes, title and registration. Not all vehicles qualify for A, Z or X Plan. All Mustang
+                            Shelby GT350® and Shelby® GT350R prices exclude gas guzzler tax.<br> 2.
+                            <br> EPA-estimated city/hwy mpg for the model indicated. See fueleconomy.gov for fuel economy of other engine/transmission combinations. Actual mileage will vary. On plug-in hybrid models and electric models, fuel economy is
+                            stated in MPGe. MPGe is the EPA equivalent measure of gasoline fuel efficiency for electric mode operation.<br> 5.
+                            <br> FordPass Connect (optional on select vehicles), the FordPass App; and complimentary Connected Service are required for remote features (see FordPass Terms for details). Connected service and features depend on compatible
+                            AT&T network availability. Evolving technology/cellular networks/vehicle capability may limit functionality and prevent operation of connected features. Connected service excludes WiFi hotspot.<br> 6.
 
-                            6.<br>
-                            Special APR offers applied to Estimated Selling Price. Special APR offers require Ford
-                            Credit Financing. Not all buyers will qualify. See dealer for qualifications and complete
-                            details.<br>
-                            7.<br>
-                            Special Lease offers applied to Estimated Capitalized Cost. Special Lease offers require
-                            Ford Credit Financing. Not all buyers will qualify. See dealer for qualifications and
-                            complete details.<br>
-                            8.<br>
-                            Price for “as shown” vehicle excludes destination/delivery fee plus government fees and
-                            taxes, any finance charges, any dealer processing charge, any electronic filing charge, and
-                            any emission testing charge. Does not include A, Z or X Plan price. All Mustang Shelby
-                            GT350, Shelby GT350R and Shelby GT500 prices exclude gas guzzler tax.<br>
+                            <br> Special APR offers applied to Estimated Selling Price. Special APR offers require Ford Credit Financing. Not all buyers will qualify. See dealer for qualifications and complete details.
+                            <br> 7.
+                            <br> Special Lease offers applied to Estimated Capitalized Cost. Special Lease offers require Ford Credit Financing. Not all buyers will qualify. See dealer for qualifications and complete details.<br> 8.
+                            <br> Price for “as shown” vehicle excludes destination/delivery fee plus government fees and taxes, any finance charges, any dealer processing charge, any electronic filing charge, and any emission testing charge. Does not
+                            include A, Z or X Plan price. All Mustang Shelby GT350, Shelby GT350R and Shelby GT500 prices exclude gas guzzler tax.<br> 9.
 
-                            9.<br>
-                            Wi-Fi hotspot includes complimentary wireless data trial that begins upon AT&T activation
-                            and expires at the end of 3 months or when 3GB of data is used, whichever comes first, but
-                            cannot extend beyond the complimentary subscription period for remote features. To activate,
-                            go to www.att.com/ford.<br>
+                            <br> Wi-Fi hotspot includes complimentary wireless data trial that begins upon AT&T activation and expires at the end of 3 months or when 3GB of data is used, whichever comes first, but cannot extend beyond the complimentary
+                            subscription period for remote features. To activate, go to www.att.com/ford.<br> 10.
 
-                            10.<br>
-                            Driver-assist features are supplemental and do not replace the driver's attention, judgment
-                            and need to control the vehicle. It does not replace safe driving. See Owner's Manual for
-                            details and limitations.<br>
+                            <br> Driver-assist features are supplemental and do not replace the driver's attention, judgment and need to control the vehicle. It does not replace safe driving. See Owner's Manual for details and limitations.<br>
                         </div>
                     </div>
                 </div>
@@ -174,8 +688,7 @@
     <section id="search">
         <div class="search__container d-flex justify-content-between align-items-center">
             <form class="form-group style__search">
-                <span><i class="fas fa-search"></i></span><input type="search" class="search-input"
-                    placeholder="Search">
+                <span><i class="fas fa-search"></i></span><input type="search" class="search-input" placeholder="Search">
             </form>
             <div class="popular">
                 <div class="content">
@@ -307,8 +820,7 @@
                 <div class="res__link" style="width: 30%;">
                     <div class="tablet__content">
                         <a href="#Finance" data-toggle="collapse">
-                            <div class="d-flex justify-content-between align-items-center"
-                                style="border-bottom: 1px solid #a7a7a738;">
+                            <div class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #a7a7a738;">
                                 <h3>Finance</h3><i class="fas fa-chevron-down"></i>
                             </div>
                         </a>
@@ -331,8 +843,7 @@
                     </div>
                     <div class="tablet__content">
                         <a href="#Owner" data-toggle="collapse">
-                            <div class="d-flex justify-content-between align-items-center"
-                                style="border-bottom: 1px solid #a7a7a738;">
+                            <div class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #a7a7a738;">
                                 <h3>Owner</h3><i class="fas fa-chevron-down"></i>
                             </div>
                         </a>
@@ -359,8 +870,7 @@
                     </div>
                     <div class="tablet__content">
                         <a href="#Experience" data-toggle="collapse">
-                            <div class="d-flex justify-content-between align-items-center"
-                                style="border-bottom: 1px solid #a7a7a738;">
+                            <div class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #a7a7a738;">
                                 <h3>Experience Ford</h3><i class="fas fa-chevron-down"></i>
                             </div>
                         </a>
@@ -403,8 +913,7 @@
                 </ul>
                 <div class="mobile__content">
                     <a href="#Shopping" data-toggle="collapse">
-                        <div class="d-flex justify-content-between align-items-center"
-                            style="border-bottom: 1px solid #a7a7a738;">
+                        <div class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #a7a7a738;">
                             <h3>Shopping Tools</h3><i class="fas fa-chevron-down"></i>
                         </div>
                     </a>
@@ -423,8 +932,7 @@
                 </div>
                 <div class="mobile__content">
                     <a href="#Finance" data-toggle="collapse">
-                        <div class="d-flex justify-content-between align-items-center"
-                            style="border-bottom: 1px solid #a7a7a738;">
+                        <div class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #a7a7a738;">
                             <h3>Finance</h3><i class="fas fa-chevron-down"></i>
                         </div>
                     </a>
@@ -447,8 +955,7 @@
                 </div>
                 <div class="mobile__content">
                     <a href="#Owner" data-toggle="collapse">
-                        <div class="d-flex justify-content-between align-items-center"
-                            style="border-bottom: 1px solid #a7a7a738;">
+                        <div class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #a7a7a738;">
                             <h3>Owner</h3><i class="fas fa-chevron-down"></i>
                         </div>
                     </a>
@@ -475,8 +982,7 @@
                 </div>
                 <div class="mobile__content">
                     <a href="#Experience" data-toggle="collapse">
-                        <div class="d-flex justify-content-between align-items-center"
-                            style="border-bottom: 1px solid #a7a7a738;">
+                        <div class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #a7a7a738;">
                             <h3>Experience Ford</h3><i class="fas fa-chevron-down"></i>
                         </div>
                     </a>
@@ -539,16 +1045,15 @@
                 <img src="./images/brand-logo.png" style="float: right; width: 80px;" class="logo1">
                 <!-- Button trigger modal -->
                 <a data-toggle="modal" href="#exampleModal" class="d-flex align-items-center">
-                    <i class="fas fa-globe-asia"></i><span>Change Language</span> 
+                    <i class="fas fa-globe-asia"></i><span>Change Language</span>
                 </a>
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 3000; background-color: #000000ad;">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                
+
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -562,7 +1067,7 @@
                                     <button>Spanish</button>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -593,22 +1098,66 @@
         </div>
     </section>
 
+    <div class="backToTop">
+        <a href="#" class="cd-top text-replace js-cd-top"><img src="./images/download.png" alt=""></a>
+
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
         $('#collapseThree').collapse({
             show: true
         })
     </script>
+    <script>
+        $(document).click(function() {});
+
+        $('#dropdown-menu').click(function(event) {
+            event.stopPropagation();
+        });
+    </script>
+
+    <script>
+        $("[data-toggle=popover]").popover({
+            html: true,
+            trigger: 'focus',
+            content: function() {
+                var content = $(this).attr("data-popover-content");
+                return $(content).children(".popover-body").html();
+            }
+        });
+    </script>
+
+    <script src="./lib/owl-carousel/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            margin: 30,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+    <!-- back to top  -->
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
+
+    <script src="./js/js.js"></script>
+
 </body>
 
 </html>

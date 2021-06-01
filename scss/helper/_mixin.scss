@@ -1,0 +1,186 @@
+// media queries
+@mixin Responsive($canvas) {
+    @if $canvas==XS {
+        @media only screen and (max-width: $XS) {
+            @content;
+        }
+    }
+    @else if $canvas==SM {
+        @media only screen and (max-width: $SM) {
+            @content;
+        }
+    }
+    @else if $canvas==MD {
+        @media only screen and (max-width: $MD) {
+            @content;
+        }
+    }
+    @else if $canvas==XL {
+        @media only screen and (max-width: $XL) {
+            @content;
+        }
+    }
+}
+
+@mixin Responsive2($canvas) {
+    @if $canvas==XX {
+        @media only screen and (max-width: $XX) {
+            @content;
+        }
+    }
+    @else if $canvas==SM {
+        @media only screen and (width: $SM) {
+            @content;
+        }
+    }
+    @else if $canvas==MD {
+        @media only screen and (min-width: $MD) {
+            @content;
+        }
+    }
+    @else if $canvas==XL {
+        @media only screen and (min-width: $XL) {
+            @content;
+        }
+    }
+    @else if $canvas==SS {
+        @media only screen and (max-width: $SS) {
+            @content;
+        }
+    }
+    @else if $canvas==XS {
+        @media only screen and (min-width: $XS) {
+            @content;
+        }
+    }
+}
+
+@mixin Responsive3($canvas) {
+    @if $canvas==iphoneX {
+        @media screen and (width: 812px) and (height: 375px) {
+            @content;
+        }
+    }
+    @else if $canvas==ipad {
+        @media only screen and (width: 1024px) and (height: 768px) {
+            @content;
+        }
+    }
+    @else if $canvas==pixel2 {
+        @media only screen and (width: 731px) and (height: 411px) {
+            @content;
+        }
+    }
+    @else if $canvas==motoG4 {
+        @media only screen and (width: 640px) and (height: 360px) {
+            @content;
+        }
+    }
+    @else if $canvas==surface {
+        @media only screen and (width: 720px) and (height: 540px) {
+            @content;
+        }
+    }
+    @else if $canvas==glaxyFold {
+        @media only screen and (max-width: 725px) {
+            @content;
+        }
+    }
+    @else if $canvas==XS {
+        @media only screen and (min-width: $XS) {
+            @content;
+        }
+    }
+}
+
+//footer-link
+@mixin Flink() {
+    ul {
+        list-style: none;
+        h3 {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+        li {
+            &:hover {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+            a {
+                font-size: 16px;
+                color: #a7a7a7;
+            }
+        }
+    }
+}
+
+// device
+@mixin Device() {
+    a {
+        h3 {
+            font-size: 20px;
+            color: #fff;
+            padding: 1rem 0;
+            font-weight: 400;
+        }
+        i {
+            color: #fff;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    ul {
+        padding: 0;
+    }
+}
+
+//icon
+@mixin Icon() {
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+//buton modal
+@mixin Modalbtn() {
+    button {
+        background-color: #0276b3;
+        border: 1px solid #0276b3;
+        color: #fff;
+        min-height: 50px;
+        width: 15%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.25;
+        &:hover {
+            color: #102b4e;
+            background-color: #fff;
+            border: 1px solid #102b4e;
+        }
+        &:focus {
+            outline-offset: 5px;
+            outline: 1px solid #0276b3;
+        }
+    }
+}
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        $value: map-get($map: $breakpoints, $key: $breakpoint);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+    @else {
+        @warn "breakpoint khong ton tai breakpoints";
+    }
+}

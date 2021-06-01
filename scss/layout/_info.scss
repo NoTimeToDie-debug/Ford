@@ -1,0 +1,95 @@
+.info {
+    text-align: center;
+    margin-top: 15px;
+    .info-head {
+        h1 {
+            margin-top: 2rem;
+        }
+    }
+    .info-item {
+        .item {
+            margin-top: -30px;
+            .info-content {
+                a {
+                    text-decoration: none;
+                    img {
+                        height: auto;
+                        width: 100%;
+                        max-width: 300px;
+                        margin-top: 1rem;
+                        margin: auto;
+                    }
+                    h3 {
+                        margin-top: 1rem;
+                        font-size: 20px;
+                        color: #337ab7;
+                        transition: all 0.5s;
+                        &:hover {
+                            color: #23527c;
+                        }
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .info-bottom {
+                margin-top: 1rem;
+                p {
+                    font-size: 13px;
+                    margin: 0;
+                    span {
+                        color: #0276b3;
+                        cursor: pointer;
+                        top: -0.5em;
+                        font-size: 75%;
+                        line-height: 0;
+                        position: relative;
+                        vertical-align: baseline;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    .btn-primary {
+                        background-color: #0276b3;
+                        border: 1px solid #0276b3;
+                        color: #fff;
+                        min-height: 50px;
+                        width: 270px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        font-size: 15px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        line-height: 1.25;
+                        border-radius: 0%;
+                        &:hover {
+                            color: #102b4e;
+                            background-color: #fff;
+                            border: 1px solid #102b4e;
+                        }
+                    }
+                    h5 {
+                        font-size: 15px;
+                        span {
+                            margin-left: 10px;
+                        }
+                        &:hover {
+                            background-color: transparent;
+                            color: #102b4e;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond-to('medium') {
+        h1 {
+            font-size: 30px;
+        }
+    }
+}

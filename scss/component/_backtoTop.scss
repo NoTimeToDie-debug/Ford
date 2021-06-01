@@ -1,0 +1,18 @@
+.backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    a {
+        opacity: 0;
+        img {
+            transform: rotate(180deg);
+        }
+    }
+    a.cd-top--is-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+    a.cd-top--fade-out {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,58 @@
+.carousel-2 {
+    background-image: url(./../../images/carousel-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 95%;
+    position: relative;
+    margin-top: 2rem;
+    &:hover {
+        .carousel-content a i {
+            background: #fff;
+            color: #2861a4;
+        }
+    }
+    &:focus {
+        outline: 1px solid #0276b3 !important;
+        outline-offset: -3px;
+    }
+    .carousel-content {
+        position: absolute;
+        border: none;
+        top: 10%;
+        text-align: center;
+        width: 100%;
+        a {
+            text-decoration: none;
+            list-style: none;
+            &:focus {
+                outline: 1px solid #0276b3 !important;
+                outline-offset: -3px;
+            }
+            h3 {
+                font-size: 37px;
+                color: #fff;
+            }
+            p {
+                font-size: 14px;
+                color: #FFFFFF;
+                vertical-align: middle;
+                i {
+                    font-size: 13px;
+                    font-weight: bold;
+                    line-height: 19px;
+                    display: inline-block;
+                    width: 21px;
+                    height: 21px;
+                    margin-left: 10px;
+                    text-align: center;
+                    letter-spacing: 0px;
+                    color: rgb(255, 255, 255);
+                    border-radius: 50%;
+                    border: solid 1px #fff;
+                }
+            }
+        }
+    }
+}

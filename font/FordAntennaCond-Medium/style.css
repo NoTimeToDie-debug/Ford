@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Ford Antenna';
+    src: local('Ford Antenna Cond Medium'), local('Ford-Antenna-Cond-Medium'),
+        url('FordAntennaCond-Medium.woff2') format('woff2'),
+        url('FordAntennaCond-Medium.woff') format('woff'),
+        url('FordAntennaCond-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }

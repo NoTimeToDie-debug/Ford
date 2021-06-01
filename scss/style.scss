@@ -1,5 +1,11 @@
-@import './help/variable';
-@import './help/mixin';
+@import './helper/variable';
+@import './helper/variables';
+@import './helper/mixin';
+@import './layout/carousel-2';
+@import './layout/carousel';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/info';
 @import './component/brandGallery';
 @import './component/airbagRecalls';
 @import './component/disclosures';
